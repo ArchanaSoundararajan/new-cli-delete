@@ -1,5 +1,5 @@
 credentials "ck-tfe.sandpedia.com" {
-      token =  "$TF_TOKEN"
+      token =  "$TerraformEnterpriseToken"
 }
 
 terraform {
