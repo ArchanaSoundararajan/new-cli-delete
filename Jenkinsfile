@@ -20,7 +20,7 @@ pipeline {
             steps {
                 script {
                     // Initialize the Terraform workspace
-                    sh "terraform init -y"
+                    sh "terraform init"
                 }
             }
         }
