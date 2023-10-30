@@ -15,7 +15,16 @@ pipeline {
                 checkout scm
             }
         }
-        
+          stage('Terraform Login') {
+            steps {
+                script {
+                    // Initialize the Terraform workspace
+                    sh "terraform login ck-tfe.sandpedia.com"
+                    
+                }
+            }
+        }
+
         stage('Terraform Init') {
             steps {
                 script {
