@@ -4,7 +4,7 @@ credentials "ck-tfe.sandpedia.com" {
 
 terraform {
   cloud {
-    
+    hostname = "ck-tfe.sandpedia.com"
     organization = "cloud-kinetics-admin"
 
     workspaces {
