@@ -20,7 +20,7 @@ pipeline {
             steps {
                 script {
                     // Initialize the Terraform workspace
-                    sh "terraform init -migrate-state"
+                    sh "terraform init"
                 }
             }
         }
