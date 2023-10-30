@@ -15,14 +15,7 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Terraform login') {
-            steps {
-                script {
-                    // Initialize the Terraform workspace
-                    envsubst < terraformrc > ~/.terraformrc
-                }
-            }
-        }
+        
         stage('Terraform Init') {
             steps {
                 script {
