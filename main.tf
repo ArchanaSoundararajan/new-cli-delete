@@ -1,3 +1,7 @@
+credentials "ck-tfe.sandpedia.com" {
+      token =  $TF_TOKEN
+}
+
 terraform {
   cloud {
     
