@@ -15,7 +15,14 @@ pipeline {
                 checkout scm
             }
         }
-
+        stage('Terraform login') {
+            steps {
+                script {
+                    // Initialize the Terraform workspace
+                    export TFE_TOKEN = '$TFE_TOKEN'
+                }
+            }
+        }
         stage('Terraform Init') {
             steps {
                 script {
