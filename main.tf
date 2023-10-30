@@ -1,6 +1,3 @@
-credentials "ck-tfe.sandpedia.com" {
-      token =  "$TerraformEnterpriseToken"
-}
 
 terraform {
   cloud {
