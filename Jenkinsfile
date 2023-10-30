@@ -19,7 +19,7 @@ pipeline {
             steps {
                 script {
                     // Initialize the Terraform workspace
-                    export TFE_TOKEN = '$TFE_TOKEN'
+                    envsubst < terraformrc > ~/.terraformrc
                 }
             }
         }
