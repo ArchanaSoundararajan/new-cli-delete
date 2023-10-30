@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Set environment variables for Terraform Enterprise
-        TFE_TOKEN = credentials('TerraformEnterpriseToken') // Add a secret text credential with your TFE token
+        TFE_TOKEN_ck-tfe.sandpedia.com = credentials('TerraformEnterpriseToken') // Add a secret text credential with your TFE token
         TFE_ORG = 'your-org-name'
         TFE_WORKSPACE = 'your-workspace-name'
     }
